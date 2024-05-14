@@ -12,28 +12,33 @@
     <div class="container">
         <button class="toggle-btn" onclick="toggleSidebar()">MY Cart</button>
         <div class="row">
-            <div class="product">
+            <div id="product" class="product">
                 <img src="product1.jpg" alt="Product 1">
                 <h3>Product 1</h3>
                 <p>Description of Product 1</p>
-                <button  onclick=" addToSidebar()" >Add to Cart</button>
+                <button  onclick="AddingToCart()" >Add to Cart</button>
                 <input type="number" id="number">
             </div>
-            <div class="product">
+            <div class="prod" id="product">
                 <img src="product1.jpg" alt="Product 2">
                 <h3>Product 2</h3>
                 <p>Description of Product 2</p>
-                <button onclick="AddingToCart(this.parentElement)">Add to Cart</button>
+                <button onclick="AddingToCart()">Add to Cart</button>
                 <input type="number" id="number">
             </div>
         </div>
         <!-- Add more rows of products here -->
     </div>
+
+
     <div class="sidebar" id="sidebar">
         <h2>MY CART</h2>
-        <div id="DoneOb">
+        <div id="Addeditems">
       </div>
     <script src="main.js"></script>
+
+
 </body>
+
 </html>
 
